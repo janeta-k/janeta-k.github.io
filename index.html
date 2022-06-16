@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Janet Santi</title>
+  </head>
+  <body>
+    <!--navbar-->
+    <nav class="navbar fixed-top">
+      <h1 class="logo">PORTFOLIO</h1>
+      <ul class="nav-links">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#tech">Tech Stack</a></li>
+        <li><a href="#proyects">Projects</a></li>
+      </ul>
+      <img src="./img/menu-btn.png" alt="" class="menu-btn" />
+    </nav>
+
+    <header>
+      <div class="header-content">
+        <h1>JANET SANTI</h1>
+        <div class="line"></div>
+        <h2>Front-End Developer</h2>
+      </div>
+    </header>
+
+    <section class="tours" id="about">
+      <div class="row">
+        <div class="col image-col">
+          <div class="image-gallery">
+            <img src="./img/img7.png" alt="" />
+          </div>
+        </div>
+        <div class="col content-col">
+          <h1>ABOUT ME</h1>
+          <div class="line"></div>
+          <p>
+            Hi, I'm Janet Santi and I'm currently 18 years old, having graduated from high school in 2021 and finished the Front-End development Bootcamp this year. My main goal is to find a job where I can test my skills and studies acquired in the Bootcamp, in addition to continue learning to expand my knowledge in Front-End development and the different areas of programming. I consider myself an organized, proactive, responsible, highly motivated to learn and self-taught person. I have the best disposition to perform my tasks, and, thanks to my experience in the Bootcamp, I have managed to adapt to different work groups.
+
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--tech stack-->
+    <section class="tech" id="tech">
+        <h1>MY TECH STACK</h1>
+        <div class="line"></div>
+        <h4>Technologies i've been working with recently</h4>
+        <div class="container">
+            <div class=" centrado">
+              <div class="col-sm"><img class="tech-img img-fluid" src="./img/JavaScript-logo.png" alt=""></div>
+              <div class="col-sm"><img class="tech-img img-fluid"  src="./img/pngegg (2).png" alt=""></div>
+              <div class="col-sm"><img class="tech-img img-fluid" src="./img/kisspng-web-development-html-cascading-style-sheets-css3-b-minimalist-resume-5b29b19f0d7e55.4188877715294591030553.png" alt=""></div>
+              <div class="col-sm"><img class="tech-img img-fluid" src="./img/pngegg (4).png" alt=""></div>
+              <div class="col-sm"><img class="tech-img img-fluid" src="./img/pngegg (5).png" alt=""></div>
+              <div class="col-sm"><img class="tech-img img-fluid" src="./img/gitHub.png" alt=""></div>
+              <div class="col-sm"><img class="tech-img img-fluid" src="./img/file_type_vscode_icon_130084.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--tech stack-->
+    <section class="proyects" id="proyects">
+        <h1>PROJECTS</h1>
+        <div class="line"></div>
+        <h4>Things i've built so far</h4>
+      <div class="centrado">
+        <div class="card mb-3" style="width: 18rem">
+          <img src="https://electrogar.com.ar/wp-content/uploads/2020/04/carro-de-compras.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title text-center mb-5">Shopping Cart</h5>
+            <div class="col text-center">
+                <a href="https://github.com/janeta-k/ryck-and-morty.git" class="ctn">View Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3" style="width: 18rem">
+          <img src="./img/Inkedpokedex_LI.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title text-center mb-5">Pokedex</h5>
+            <div class="col text-center">
+                <a href="https://github.com/janeta-k/Pokedex.git" class="ctn">View Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3" style="width: 18rem">
+          <img src="./img/nosotros.webp" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title text-center mb-5">Chocolateria</h5>
+            <div class="col text-center">
+                <a href="https://github.com/janeta-k/chocolateria.git" class="ctn">View Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Copyright © 2022 Janet Santi</p>
+    </footer>
+
+    <script>
+      const menuBtn = document.querySelector(".menu-btn");
+      const navlinks = document.querySelector(".nav-links");
+
+      menuBtn.addEventListener("click", () => {
+        navlinks.classList.toggle("mobile-menu");
+      });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
