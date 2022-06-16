@@ -216,9 +216,13 @@ footer{
     text-align: center;
 }
 
+footer h5{
+    font-size:23px;
+}
+
 footer p{
     color: whitesmoke;
-    margin: 20px auto;
+    margin: -15px auto;
 }
 
 /*Mobile device*/
