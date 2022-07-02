@@ -11,118 +11,192 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./styles.css" />
-    <title>Janet Santi</title>
+    <title>Portfolio</title>
   </head>
+
   <body>
+
     <!--navbar-->
     <nav class="navbar fixed-top">
-      <h1 class="logo">PORTFOLIO</h1>
-      <ul class="nav-links">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#tech">Tech Stack</a></li>
-        <li><a href="#proyects">Projects</a></li>
+      <h1 class="navbar__logo">PORTFOLIO</h1>
+      <ul class="navbar__links">
+        <li class="navbar__li"><a class="navbar__link" href="#">Inicio</a></li>
+        <li class="navbar__li"><a class="navbar__link" href="#about">Acerca de</a></li>
+        <li class="navbar__li"><a class="navbar__link" href="#tech">Tech Stack</a></li>
+        <li class="navbar__li"><a class="navbar__link" href="#proyects">Proyectos</a></li>
       </ul>
-      <img src="./img/menu-btn.png" alt="" class="menu-btn" />
+      <img class="navbar__menu-btn" src="./img/menu-btn.png" alt="" />
     </nav>
 
-    <header>
-      <div class="header-content">
-        <h1>JANET SANTI</h1>
-        <div class="line"></div>
-        <h2>Front-End Developer</h2>
+    <!--header-banner-->
+    <header class="header">
+      <div class="header__content">
+        <h1 class="header__title">JANET SANTI</h1>
+        <div class="header__line"></div>
+        <h2 class="header__subtitle">Front-End Developer</h2>
+        <div class="col text-center">
+          <a
+            href="./docs/Janet santi orellana.pdf"
+            download="Janet Santi CV"
+            class="header__ctn"
+            >Descargar CV</a
+          >
+        </div>
       </div>
     </header>
 
-    <section class="tours" id="about">
+    <section class="about" id="about">
       <div class="row">
-        <div class="col image-col">
-          <div class="image-gallery">
-            <img src="./img/img7.png" alt="" />
+        <div class="about__image-col col">
+          <div class="about__image-container">
+            <img class="about__image-width" src="./img/img7.png" alt="" />
           </div>
         </div>
-        <div class="col content-col">
-          <h1>ABOUT ME</h1>
-          <div class="line"></div>
-          <p>
-            Hi, I'm Janet Santi and I'm currently 18 years old, having graduated from high school in 2021 and finished the Front-End development Bootcamp this year. My main goal is to find a job where I can test my skills and studies acquired in the Bootcamp, in addition to continue learning to expand my knowledge in Front-End development and the different areas of programming. I consider myself an organized, proactive, responsible, highly motivated to learn and self-taught person. I have the best disposition to perform my tasks, and, thanks to my experience in the Bootcamp, I have managed to adapt to different work groups.
-
+        <div class="about__content col">
+          <h1 class="about__title">ACERCA DE MÍ</h1>
+          <div class="about__line"></div>
+          <p class="about__paragraph">
+            ¡Hola!, soy Janet Santi y actualmente tengo 18 años, habiendo
+            egresado de la enseñanza media el año 2021 y finalizado el Bootcamp
+            de desarrollo Front-End este año. <br />
+            En el programa pude adquirir el stack de conocimientos y habilidades
+            necesarias para el perfil profesional Front-End, tales como,
+            JavaScript, HTML5, CSS3, SASS, Bootstrap, Framework Vue.js, GitHub,
+            etc. <br />
+            Me considero una persona organizada, proactiva, con gran motivación
+            a la hora de aprender y autodidacta. Tengo la mejor disposición para
+            realizar mis labores, y, gracias a mi experiencia en el Bootcamp, he
+            logrado adaptarme a los distintos grupos de trabajo.
           </p>
         </div>
       </div>
     </section>
 
-    <!--tech stack-->
     <section class="tech" id="tech">
-        <h1>MY TECH STACK</h1>
-        <div class="line"></div>
-        <h4>Technologies i've been working with recently</h4>
-        <div class="container">
-            <div class=" centrado">
-              <div class="col-sm"><img class="tech-img img-fluid" src="./img/JavaScript-logo.png" alt=""></div>
-              <div class="col-sm"><img class="tech-img img-fluid"  src="./img/pngegg (2).png" alt=""></div>
-              <div class="col-sm"><img class="tech-img img-fluid" src="./img/kisspng-web-development-html-cascading-style-sheets-css3-b-minimalist-resume-5b29b19f0d7e55.4188877715294591030553.png" alt=""></div>
-              <div class="col-sm"><img class="tech-img img-fluid" src="./img/pngegg (4).png" alt=""></div>
-              <div class="col-sm"><img class="tech-img img-fluid" src="./img/pngegg (5).png" alt=""></div>
-              <div class="col-sm"><img class="tech-img img-fluid" src="./img/gitHub.png" alt=""></div>
-              <div class="col-sm"><img class="tech-img img-fluid" src="./img/file_type_vscode_icon_130084.png" alt=""></div>
-            </div>
-        </div>
+      <h1 class="tech__title">STACK DE TECNOLOGÍAS</h1>
+      <div class="tech__line"></div>
+      <h4 class="tech__subtitle">Tecnologías con las que he trabajado recientemente</h4>
+
+      <div class="tech__images">
+        <img class="tech__img" src="./img/JavaScript-logo.png" alt="" />
+
+        <img class="tech__img" src="./img/pngegg (2).png" alt="" />
+
+        <img
+          class="tech__img"
+          src="./img/kisspng-web-development-html-cascading-style-sheets-css3-b-minimalist-resume-5b29b19f0d7e55.4188877715294591030553.png"
+          alt=""
+        />
+
+        <img class="tech__img" src="./img/pngegg (4).png" alt="" />
+
+        <img class="tech__img" src="./img/pngegg (5).png" alt="" />
+
+        <img class="tech__img" src="./img/gitHub.png" alt="" />
+
+        <img
+          class="tech__img"
+          src="./img/file_type_vscode_icon_130084.png"
+          alt=""
+        />
+
+        <img class="tech__img" src="./img/Sass_Logo_Color.svg" alt="" />
+
+        <img class="tech__img" src="./img/descarga.png" alt="" />
+      </div>
     </section>
 
-
-    <!--tech stack-->
+    <!--proyects-->
     <section class="proyects" id="proyects">
-        <h1>PROJECTS</h1>
-        <div class="line"></div>
-        <h4>Things i've built so far</h4>
-      <div class="centrado">
-        <div class="card mb-3" style="width: 18rem">
-          <img src="https://electrogar.com.ar/wp-content/uploads/2020/04/carro-de-compras.png" class="card-img-top" alt="..." />
+      <h1 class="proyects__title">PROYECTOS</h1>
+      <div class="proyects__line"></div>
+      <h4 class="proyects__subtitle">Proyectos que he construido hasta ahora</h4>
+      <div class="proyects__container">
+
+        <div class="proyects__cards card mb-3" style="width: 18rem">
+          <img
+            src="https://electrogar.com.ar/wp-content/uploads/2020/04/carro-de-compras.png"
+            class="proyects__img card-img-top"
+            alt="..."
+          />
           <div class="card-body">
-            <h5 class="card-title text-center mb-5">Shopping Cart</h5>
+            <h5 class="card-title text-center ">Carrito(API Rick and Morty)</h5>
+            <!-- <p class="card-text">HTML5/CSS3/JS/VUE/Bootstrap</p> -->
             <div class="col text-center">
-                <a href="https://github.com/janeta-k/ryck-and-morty.git" class="ctn">View Code</a>
+              <p class="proyects__text">HTML5/CSS3/JS/VUE/Bootstrap</p>
+              <a
+                href="https://github.com/janeta-k/ryck-and-morty.git"
+                class="proyects__ctn"
+                >Ver código</a
+              >
             </div>
           </div>
         </div>
 
-        <div class="card mb-3" style="width: 18rem">
-          <img src="./img/Inkedpokedex_LI.jpg" class="card-img-top" alt="..." />
+        <div class="proyects__cards card mb-3" style="width: 18rem">
+          <img src="./img/Inkedpokedex_LI.jpg" class="proyects__img card-img-top" alt="..." />
           <div class="card-body">
-            <h5 class="card-title text-center mb-5">Pokedex</h5>
+            <h5 class="card-title text-center">Pokedex con pokeapi</h5>
+            <!-- <p class="card-text">HTML5/CSS3/JS/Bootstrap</p> -->
             <div class="col text-center">
-                <a href="https://github.com/janeta-k/Pokedex.git" class="ctn">View Code</a>
+              <p class="proyects__text">HTML5/CSS3/JS/Bootstrap</p>
+              <a href="https://github.com/janeta-k/Pokedex.git" class="proyects__ctn"
+                >Ver código</a
+              >
             </div>
           </div>
         </div>
 
-        <div class="card mb-3" style="width: 18rem">
-          <img src="./img/nosotros.webp" class="card-img-top" alt="..." />
+        <div class="proyects__cards card mb-3" style="width: 18rem">
+          <img src="./img/nosotros.webp" class="proyects__img card-img-top" alt="..." />
           <div class="card-body">
-            <h5 class="card-title text-center mb-5">Chocolateria</h5>
+            <h5 class="card-title text-center">Chocolatería</h5>
+            <!-- <p class="card-text">HTML5/CSS3/JS/SASS/Bootstrap</p> -->
             <div class="col text-center">
-                <a href="https://github.com/janeta-k/chocolateria.git" class="ctn">View Code</a>
+              <p class="proyects__text">HTML5/CSS3/JS/SASS/Bootstrap</p>
+              <a href="https://github.com/janeta-k/chocolateria.git" class="proyects__ctn"
+                >Ver código</a
+              >
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <footer>
-      <h5>contáctame: <a href="mailto:janetsanti892@gmail.com"><i class="fa-solid fa-envelope"></i></a> <a href="https://www.linkedin.com/in/janet-santi-03460223b/"><i class="fa-brands fa-linkedin"></i></a> <a href="https://github.com/janeta-k"><i class="fa-brands fa-github"></i></a></h5>
-<hr>
-      <p>Copyright © 2022 Janet Santi</p>
+    <footer class="footer">
+      <div>
+        <h4 class="footer__title">Pongámonos en contacto</h4>
+        <div class="footer__icons">
+          <a class="footer__icon" href="mailto:janetsanti892@gmail.com"
+            ><i class="fa-solid fa-envelope"></i>
+          </a>
+          <a
+            class="footer__icon"
+            href="https://www.linkedin.com/in/janet-santi-03460223b/"
+            ><i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a class="footer__icon" href="https://github.com/janeta-k"
+            ><i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+      <hr class="footer__hr" />
+
+      <p class="footer__copy">Copyright © 2022 Janet Santi</p>
     </footer>
 
     <script>
-      const menuBtn = document.querySelector(".menu-btn");
-      const navlinks = document.querySelector(".nav-links");
+      const menuBtn = document.querySelector(".navbar__menu-btn");
+      const navlinks = document.querySelector(".navbar__links");
 
       menuBtn.addEventListener("click", () => {
         navlinks.classList.toggle("mobile-menu");
       });
     </script>
-    <script src="https://kit.fontawesome.com/ee19aaa67d.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/ee19aaa67d.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

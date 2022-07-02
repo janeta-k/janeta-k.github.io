@@ -5,22 +5,17 @@
     box-sizing: border-box;
 }
 
-a {
-    text-decoration: none;
-}
-
-ul {
-    list-style: none;
-}
-
-.active{
-    color: #fc036b;
-    text-decoration: underline;
-    font-weight: bold;
-}
-
 body, html {
     overflow-x: hidden;
+}
+
+p{
+    color: #7c7c7c;
+    padding: 0px 40px;
+}
+
+a {
+    text-decoration: none;
 }
 
 /*NavBar*/
@@ -34,67 +29,24 @@ body, html {
     width: 100%;
     justify-content: space-between;
     padding: 20px;
-    
-    
 }
-
-.nav-links {
+.navbar__links {
     display: flex;
     align-items: center;
+    list-style: none;
 }
-
-.nav-links li{
+.navbar__li{
     margin: 0 30px;
 }
-
-.nav-links a{
+.navbar__link{
     color: white;
     font-size: bold;
 }
-header {
-    width: 100vw;
-    height: 100vh;
-    background-image: url('https://www.xtrafondos.com/wallpapers/resoluciones/20/diseno-de-paisaje-del-espacio_2560x1440_5771.jpg');
-    background-position: bottom;
-    background-size: cover;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+.navbar__link:hover{
+    color: beige;
+    font-weight: bold;
 }
-
-.header-content{
-    margin-bottom: 150px;
-    color: whitesmoke;
-    text-align: center;
-}
-
-.header-content h2 {
-    font-size: 4vmin;
-    margin-bottom: 25px;
-    margin-top: 25px;
-}
-
-.line {
-    width: 150px;
-    height: 4px;
-    background-color: #fc036b;
-    margin: 10px auto;
-    border-radius: 5px;
-}
-
-.header-content h1 {
-    font-size: 10vmin;
-    margin-top: 50px;
-}
-
-.ctn {
-    padding: 8px 15px;
-    background: #fc036b;
-    border-radius: 30px;
-    color: whitesmoke;
-}
-
-.menu-btn{
+.navbar__menu-btn{
     position: absolute;
     top: 30px;
     right: 30px;
@@ -102,143 +54,229 @@ header {
     cursor: pointer;
     display: none;
 }
-/*Proyects*/
 
-.proyects h1{
+/*Banner*/
+
+.header {
+    background-image: url('./img/diseno-de-paisaje-del-espacio_2560x1440_5771.jpg');
+    background-size: cover;
+    background-position: center center;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.header__content{
+    margin-bottom: 150px;
+    color: whitesmoke;
     text-align: center;
 }
-
-.proyects h4{
-    text-align: center;
-    margin-bottom: 40px;
-
+.header__title{
+    font-size: 10vmin;
+    margin-top: 50px;
+}
+.header__line{
+    width: 150px;
+    height: 4px;
+    background-color: #fc036b;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.header__subtitle{
+    font-size: 4vmin;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+.header__ctn {
+    padding: 8px 15px;
+    background: #fc036b;
+    border-radius: 30px;
+    color: whitesmoke;
 }
 
-.card{
-    padding: 0%;
-}
-
-.card img{
-    width: 100%;
-    height: 280px;
-}
-
-.card .ctn{
-    align-items: center;
-}
-
-/*tech stack*/
-
-.tech h1{
-    text-align: center;
-}
-
-.tech h4{
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.tech-img{
-    width: 100px;
-    text-align: center;
-}
-
-section{
+/*About*/
+.about{
     width: 80%;
     margin: 80px auto;
 }
-
-.centrado{
-    display: flex;
-    align-items: center;
+.about__image-col{
+    width: 60%;
+}
+.about__image-container{
     width: 100%;
-    justify-content: space-between;
+}
+.about__image-width{
+    width: 400px;
+}
+.about__content{
+    width: 40%;
+}
+.about__title{
+    font-size: 7vmin;
+}
+.about__line{
+    width: 150px;
+    height: 4px;
+    background-color: #fc036b;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.about__paragraph{
+    padding: 0;
+    margin: 30px auto;
+    text-align: justify;
 }
 
+/*tech stack*/
+.tech{
+    width: 80%;
+    margin: 80px auto;
+}
+.tech__title{
+    text-align: center;
+}
+.tech__line{
+    width: 150px;
+    height: 4px;
+    background-color: #fc036b;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.tech__subtitle{
+    text-align: center;
+    font-size: 3vmin;
+    margin: 20px auto;
+    margin-bottom: 60px;
+}
+.tech__images{
+    margin: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.tech__img{
+    width: 94px;
+    padding: 5px;
+}
 .row .col{
     display: flex;
     flex-direction: column;
     align-items: center;
 } 
 
-
-h4{
+/*Proyectos*/
+.proyects{
+    width: 80%;
+    margin: 80px auto;
+}
+.proyects__title{
+    text-align: center;
+}
+.proyects__line{
+    width:150px;
+    height: 4px;
+    background-color: #fc036b;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.proyects__subtitle{
+    text-align: center;
     font-size: 3vmin;
-    color: #484872;
     margin: 20px auto;
+    margin-bottom: 40px;
 }
-
-p{
-    color: #7c7c7c;
-    padding: 0px 40px;
-}
-
-.content-col{
-    width: 40%;
-}
-.image-col{
-    width: 60%;
-}
-
-.tours .image-gallery{ 
-    width: 100%; 
-}
-
-.image-gallery img{
-    width: 400px;
-}
-
-.content-col h1{
-    font-size: 7vmin;
-}
-
-.content-col line{
-    margin-left: -1px;
-    
-}
-
-.content-col p{
-    padding: 0;
-    margin: 30px auto;
-    text-align: justify;
-}
-
-.content-col .ctn{
-    margin-left: -100px;
-} 
-
-footer{
+.proyects__container{
+    display: flex;
+    align-items: center;
     width: 100%;
-    height: 90px;
-    padding: 20px 80px;
-    margin: 0;
+    justify-content: space-between;
+}
+.card{
+    padding: 0%;
+}
+.proyects__text{
+    padding: 14px 0px;
+    font-size: 14px;
+}
+.proyects__img{
+    width: 100%;
+    height: 280px;
+}
+.proyects__ctn{
+    padding: 8px 15px;
+    background: #fc036b;
+    border-radius: 30px;
+    color: whitesmoke;
+    align-items: center;
+}
+
+/*footer*/
+
+.footer{
+    width: 100%;
+    height: auto;
+    /* padding: 20px 0px; */
+    /* margin: 0; */
     background: #484872;
     text-align: center;
 }
 
-footer h5{
-    font-size:23px;
+.footer__title{
+    margin: 0;
+    font-size:30px;
+    color: white;
+}
+.footer__icons{
+    margin: 5px;
+}
+.footer__icon{
+    font-size: 30px;
+    color: white;
+    padding: 0px 9px;
 }
 
-footer p{
+.footer__icon:hover{
+    color:#fc036b;
+}
+
+.footer__copy{
     color: whitesmoke;
-    margin: -15px auto;
+    margin-bottom: 0%;
+    padding-bottom: 3px;
+}
+
+.footer__hr{
+    color: white;
+    margin: 0;
 }
 
 /*Mobile device*/
 @media only screen and (max-width:850px){
-    .menu-btn{
+    .row{
+        flex-direction: column;
+    }
+    /* .row .col{
+        margin: 20px auto;
+    } */
+    /* .col img{
+        max-width: 90%;
+    } */
+
+    /*navbar*/
+    .navbar__menu-btn{
         display: block;
     }
     .navbar{
         padding: 0;
     }
-    .logo{
+    .navbar__logo{
         position: absolute;
         top: 30px;
         left: 30px;
     }
-    .nav-links{
+    .navbar__links{
         flex-direction: column;
         width: 100%;
         height: 100vh;
@@ -247,51 +285,56 @@ footer p{
         margin-top: -900px;
         transition: all 0.5s ease;
     }
-
     .mobile-menu {
         margin-top: 0px;
         border-bottom-right-radius: 30%;
     }
-    .nav-links li {
+    .navbar__li{
         margin: 30px auto;
     }
-    /*event*/
-    .row{
-        flex-direction: column;
+
+    /*about*/
+    .about__image-col{
+        width: 100%;
+    }
+    .about__image-container{
+        display: flex;
+        justify-content: center;
+    }
+    .about__image-width{
+        width: 100%;
+    }
+    .about__content{
+        width: 100%;
     }
     
-    .tech-img{
-        margin-bottom: 15px;
+    /*tech*/
+    .tech__subtitle{
+        font-size: 15px;
     }
-
-    .centrado{
+    .tech__img{
+        width: 90px;
+        padding: 7px;
+    }
+    /*proyects*/
+    .proyects__container{
         flex-direction: column;
-
     }
-    .row .col{
-        margin: 20px auto;
-    }
-    .col img{
-        max-width: 90%;
+    .proyects__subtitle{
+        font-size: 15px;
     }
 
-    /*explore*/
-    .explore-content{
-        width: 100%;
+    /*footer*/
+    .footer{
+        padding: 3px;
     }
-    .tours .col{
-        width: 100%;
+    .footer__title{
+        margin: 0;
+        font-size:25px;
+        color: white;
     }
-    .image-gallery{
-        justify-content: center;
-        align-items: center;
-    }
-    .image-gallery img{
-        width: 90%;
-    }
-
-    footer{
-        padding: 10px;
+    .footer__copy{
+       margin-top: 4px;
     }
 
 }
